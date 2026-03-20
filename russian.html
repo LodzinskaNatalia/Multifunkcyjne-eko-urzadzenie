@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>MEU</title>
+    <style>
+        *{
+            
+            font-size: x-large;
+            
+        }
+        body{
+            background-color: beige;
+            
+            
+            
+        }
+        header{
+            margin-bottom: 1%;
+            background-image: url(Liscie.jpg);
+            background-size: contain;  
+            background-size: 100%;
+            height: 25vh;
+            padding: 2rem 5rem;
+            box-shadow:  0 0 40px 15px rgba(50, 90, 20, 0.3);
+            border-radius: 20px;
+            
+            
+        }
+details ul{
+            padding: 6px;
+            margin: 8px 0 0;
+            list-style: none;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            width: 100px;
+        }
+
+        details ul li {
+            list-style-type: none;
+        }
+
+        summary {
+            list-style: none;
+            cursor: pointer;
+            font-size: 50px;
+            text-shadow: 5px 5px 10px rgb(23, 85, 0);
+        }
+
+        a {
+            display: block;
+            padding: 5px 12px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 6px;
+            transition: background 0.15s, color 0.15s;
+            font-family: "Segoe UI"; 
+            font-size: 0.7em;
+        }
+
+        a:hover {
+            background: #f2f2f2;
+            color: #000;
+        }
+        h1{
+            font-family: 'Georgia', serif;
+            font-weight: 700;
+            font-size: 3rem;
+            color: #d7ffb7; /* soft light green */
+            text-shadow: 5px 5px 10px rgb(23, 85, 0);
+            margin: 0;
+            user-select: none;
+            text-transform: uppercase;
+            text-align: center;
+            }
+
+        nav{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        main{
+            margin: 0;
+            padding: 7%;
+            position: relative;
+        }
+        footer{
+            margin: 0;
+            background-color: lightgreen;
+            padding: 2%;
+            box-shadow:  0 0 20px 15px rgb(189, 227, 160);
+            letter-spacing: 0.5px;
+            font-size: 0.8em;
+            font-style: italic;
+        }
+        
+
+        p, ol li{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.8em;
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            text-shadow:1px 1px 2px #a4a4a4;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.2em; 
+        }
+        .filmik{
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Многофункциональное  эко-устройство</h1>
+        <nav>
+             <details>
+                <summary>🌍</summary>
+                    <ul>
+                        <li><a href="index.html">Polski</a></li>
+                        <li><a href="english.html"><span style="font-size: 1em;">English</span></a></li>
+                        <li><a href="spanish.html"><span lang="es" style="font-size: 1em;">Español</span></a></li>
+                        <li><a href="german.html">Deutsch</a></li>
+                        <li><a href="japanese.html"><span lang="ja" style="font-size: 1em;">日本語</span></a></li>
+                    </ul>
+            </details>
+        </nav>
+    </header>
+    <main>
+        <h3>Описание</h3>
+        <p>Мы разработали прототип двух полезных и экологичных устройств и назвали его «Многофункциональное эко-устройство». Оно основано на технологии Arduino и выполняет роль, похожую на термостат.
+
+Первое устройство должно быть улучшенным термостатом, так как оно получает энергию только от солнечных панелей. Второе устройство предназначено как туристический «спасатель», который может быть полезен, например, во время похода в горы. Оно должно быть компактным и включать нагревательную пластину, когда температура слишком низкая, и систему охлаждения, когда температура слишком высокая. В нашем прототипе используется нагревательная пластина PTC для обогрева и вентилятор для охлаждения. Температуру можно настраивать в зависимости от потребностей, но в нашем случае охлаждение включается при температуре ≥ 25°C, а нагрев — при температуре ≤ 23°C.
+</p>
+            <div class="filmik">
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/hzgFY-X1EOc"
+            allowfullscreen>
+        </iframe>
+        </div>
+        
+
+        <ol><h3>Мы также подготовили анализ того, что получилось, а что можно было бы улучшить, поскольку на данный момент это лишь прототип из-за ограниченных ресурсов.
+</h3>
+            <li>Оказалось, что имеющийся у нас пауэрбанк не обеспечивает достаточного количества энергии, из-за чего устройство работает медленно (в видео показана ускоренная версия). Нам пришлось добавить батарею на 9 В. Кроме того, во время охлаждения вентилятор потребляет слишком много энергии, поэтому на экране не отображается температура. — Если бы этот прототип выходил на рынок, следовало бы использовать солнечную панель, которая обеспечивает значительно больше мощности, чем пауэрбанк.</li>
+            <li>Вентилятор (3,5 В) и нагревательная пластина обладают слишком малой мощностью, чтобы существенно влиять на температуру. — Понадобились бы более мощные компоненты, к которым у нас нет доступа.</li>
+            <li>Устройство оказалось слишком хрупким для переноски, поэтому на сайте размещено видео. Из-за этого также возникли проблемы с написанием корректно работающего кода, поскольку программист не мог тестировать его на устройстве, однако инженеру удалось это исправить. — Чтобы устройство было более прочным, его нужно было бы спаять, а для использования в качестве туристического «спасателя» добавить прочный корпус.</li>       
+        
+        </ol>
+<p>В итоге это пока лишь прототип, однако мы уже понимаем, что необходимо улучшить, чтобы устройство могло работать в более широком масштабе.</p>
+    </main>
+    <footer>
+        &#xA9; Устройство было создано Наталией Лодзиньской, Вероникой Титаевой и Адрианом Влодарским.
+    </footer>
+    
+
+
+</body></html>

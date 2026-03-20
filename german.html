@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>MEG</title>
+    <style>
+        *{
+            
+            font-size: x-large;
+            
+        }
+        body{
+            background-color: beige;
+            
+            
+            
+        }
+        header{
+            margin-bottom: 1%;
+            background-image: url(Liscie.jpg);
+            background-size: contain;  
+            background-size: 100%;
+            height: 25vh;
+            padding: 2rem 5rem;
+            box-shadow:  0 0 40px 15px rgba(50, 90, 20, 0.3);
+            border-radius: 20px;
+            
+            
+        }
+details ul{
+            padding: 6px;
+            margin: 8px 0 0;
+            list-style: none;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            width: 100px;
+        }
+
+        details ul li {
+            list-style-type: none;
+        }
+
+        summary {
+            list-style: none;
+            cursor: pointer;
+            font-size: 50px;
+            text-shadow: 5px 5px 10px rgb(23, 85, 0);
+        }
+
+        a {
+            display: block;
+            padding: 5px 12px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 6px;
+            transition: background 0.15s, color 0.15s;
+            font-family: "Segoe UI"; 
+            font-size: 0.7em;
+        }
+
+        a:hover {
+            background: #f2f2f2;
+            color: #000;
+        }
+        h1{
+            font-family: 'Georgia', serif;
+            font-weight: 700;
+            font-size: 3rem;
+            color: #d7ffb7; /* soft light green */
+            text-shadow: 5px 5px 10px rgb(23, 85, 0);
+            margin: 0;
+            user-select: none;
+            text-transform: uppercase;
+            text-align: center;
+            }
+
+        nav{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        main{
+            margin: 0;
+            padding: 7%;
+            position: relative;
+        }
+        footer{
+            margin: 0;
+            background-color: lightgreen;
+            padding: 2%;
+            box-shadow:  0 0 20px 15px rgb(189, 227, 160);
+            letter-spacing: 0.5px;
+            font-size: 0.8em;
+            font-style: italic;
+        }
+        
+
+        p, ol li{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.8em;
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            text-shadow:1px 1px 2px #a4a4a4;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.2em; 
+        }
+        .filmik{
+            text-align: center;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Multifunktionales Eko-Gerät</h1>
+        <nav>
+             <details>
+                <summary>🌍</summary>
+                    <ul>
+                        <li><a href="index.html">Polski</a></li>
+                        <li><a href="english.html"><span style="font-size: 1em;">English</span></a></li>
+                        <li><a href="spanish.html"><span lang="es" style="font-size: 1em;">Español</span></a></li>
+                        <li><a href="russian.html"><span lang="ru" style="font-size: 1em;">Русский</span></a></li>
+                        <li><a href="japanese.html"><span lang="ja" style="font-size: 1em;">日本語</span></a></li>
+                    </ul>
+            </details>
+        </nav>
+    </header>
+    <main>
+        <h3>Beschreibung</h3>
+        <p>Wir haben einen Prototyp von zwei hilfreichen und ökologischen Geräten gebaut und wir haben es Multifunktionales Eko-Gerät genannt. Es basiert auf der Technologie Arduino und hat eine ähnliche Rolle wie ein Thermostat.
+
+Das erste Gerät soll ein besseres Thermostat sein, weil es Energie nur von Solarpanels nimmt. Das zweite Gerät soll ein touristischer Lifesaver sein, der zum Beispiel bei einer Reise in die Berge helfen kann. Es soll klein sein und eine Heizplatte einschalten, wenn die Temperatur zu niedrig ist, und ein Kühlsystem einschalten, wenn die Temperatur zu hoch ist. Unser Prototyp benutzt eine PTC-Heizplatte zum Heizen und einen Ventilator zum Kühlen. Die Temperatur kann angepasst werden, aber in unserem Fall startet die Kühlung bei Temperatur &ge; 25°C und das Heizen bei Temperatur &le; 23°C.</p>
+            <div class="filmik">
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/hzgFY-X1EOc"
+            allowfullscreen>
+        </iframe>
+        </div>
+        
+
+        <ol><h3>Wir haben auch eine Analyse vorbereitet, was gut funktioniert hat und was man verbessern kann, weil das nur ein Prototyp ist.</h3>
+            <li>Es hat sich gezeigt, dass die Powerbank, die wir haben, nicht genug Energie gibt, deshalb hat das Gerät langsam gearbeitet (im Video ist es schneller gemacht). Wir mussten eine 9V-Batterie hinzufügen. Außerdem braucht der Ventilator beim Kühlen zu viel Energie, deshalb zeigt der Bildschirm die Temperatur nicht. – Wenn dieses Gerät auf den Markt kommt, sollte man ein Solarpanel benutzen, das viel mehr Energie gibt als eine Powerbank.</li>
+            <li>Der Ventilator (3,5 Volt) und die Heizplatte sind zu schwach, um die Temperatur stark zu verändern. – Man braucht stärkere Teile, aber wir haben keinen Zugang dazu.</li>
+            <li>Das Gerät ist zu empfindlich, um es zu transportieren, deshalb haben wir ein Video auf die Webseite gestellt. Es gab auch Probleme mit dem Code, weil der Programmierer das Gerät nicht testen konnte, aber der Ingenieur hat es später repariert. – Damit das Gerät stabiler ist, sollte man es löten, und für die Nutzung in den Bergen braucht es ein starkes Gehäuse.</li>
+        </ol>
+<p>Zusammenfassend ist das nur ein Prototyp, aber wir wissen, was man verbessern muss, damit es besser funktioniert.</p>
+    </main>
+    <footer>
+        &#xA9; Das Gerät wurde von Natalia Lodzińska, Veronika Titaeva und Adrian Włodarski hergestellt.
+    </footer>
+    
+
+
+</body></html>

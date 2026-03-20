@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>MED</title>
+    <style>
+        *{
+            
+            font-size: x-large;
+            
+        }
+        body{
+            background-color: beige;
+            
+            
+            
+        }
+        header{
+            margin-bottom: 1%;
+            background-image: url(Liscie.jpg);
+            background-size: contain;  
+            background-size: 100%;
+            height: 25vh;
+            padding: 2rem 5rem;
+            box-shadow:  0 0 40px 15px rgba(50, 90, 20, 0.3);
+            border-radius: 20px;
+            
+            
+        }
+details ul{
+            padding: 6px;
+            margin: 8px 0 0;
+            list-style: none;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #eee;
+            width: 100px;
+        }
+
+        details ul li {
+            list-style-type: none;
+        }
+
+        summary {
+            list-style: none;
+            cursor: pointer;
+            font-size: 50px;
+            text-shadow: 5px 5px 10px rgb(23, 85, 0);
+        }
+
+        a {
+            display: block;
+            padding: 5px 12px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 6px;
+            transition: background 0.15s, color 0.15s;
+            font-family: "Segoe UI"; 
+            font-size: 0.7em;
+        }
+
+        a:hover {
+            background: #f2f2f2;
+            color: #000;
+        }
+        h1{
+            font-family: 'Georgia', serif;
+            font-weight: 700;
+            font-size: 3rem;
+            color: #d7ffb7; /* soft light green */
+            text-shadow: 5px 5px 10px rgb(23, 85, 0);
+            margin: 0;
+            user-select: none;
+            text-transform: uppercase;
+            text-align: center;
+            }
+
+        nav{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        main{
+            margin: 0;
+            padding: 7%;
+            position: relative;
+        }
+        footer{
+            margin: 0;
+            background-color: lightgreen;
+            padding: 2%;
+            box-shadow:  0 0 20px 15px rgb(189, 227, 160);
+            letter-spacing: 0.5px;
+            font-size: 0.8em;
+            font-style: italic;
+        }
+        
+
+        p, ol li{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.8em;
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            text-shadow:1px 1px 2px #a4a4a4;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.2em; 
+        }
+        .filmik{
+            text-align: center;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Multifunctional Eco Device</h1>
+        <nav>
+             <details>
+                <summary>🌍</summary>
+                    <ul>
+                        <li><a href="index.html">Polski</a></li>
+                        <li><a href="spanish.html"><span lang="es" style="font-size: 1em;">Español</span></a></li>
+                        <li><a href="russian.html"><span lang="ru" style="font-size: 1em;">Русский</span></a></li>
+                        <li><a href="german.html">Deutsch</a></li>
+                        <li><a href="japanese.html"><span lang="ja" style="font-size: 1em;">日本語</span></a></li>
+                    </ul>
+            </details>
+        </nav>
+    </header>
+    <main>
+        <h3>Description:</h3>
+        <p>We built a prototype for two helpful and eco-friendly devices and we called it "Multifunctional Eco Device". It is based on technology called Arduino and acts as a thermostat. The former device was designed to be a better thermostat, as it draws energy only from photovoltaic panels. The latter was meant to be a touristic lifesaver, which may be helpful, for example, during a mountain hike. It should be compact, turn on the heater when the temperature is too low and turn on the cooling system when it's too high. Our prototype uses a PTC plate for heating and a fan for cooling. The temperature can be adjusted to various needs, but in our case the cooling activates at temp. &ge; 25°C and the heating at &le; 23°C.
+        </p>
+            
+        <div class="filmik">
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/hzgFY-X1EOc"
+            allowfullscreen>
+        </iframe>
+        </div>
+        
+
+        <ol><h3>We have prepared an analysis of what gone well and what we could improve, because it's (for now) only a prototype due to available resources.</h3>
+
+            <li>It turned out that the only powerbank we have wasn't enough to give the necessary amount of energy in order for the device to work, so the device worked quite slowly (the video shows us sped-up version). We were forced to add 9V battery. Also, while cooling, the fan was consuming too much energy, so the screen doesn't display the temperature. If this prototype were to enter the market, it would be necessary to use a solar panel that would give significantly more energy than a powerbank.</li>
+            <li>The fan (3.5 Volt) and the heater are too weak to significantly influence the temperature. We would need to bring stronger components, which we have no access to.</li>
+            <li>The device turned out to be too fragile to move it, so for that reason we placed the video on the website. Also because of that our programmer had problems with writing correct code, so she couldn't test it on our device, but the engineer successfully fixed it - to make the device more durable, it would need to be soldered, and to make it suitable for a touristic lifesaver, a sturdy casing would be added.</li>
+        </ol>
+<p>To sum up: it is only a prototype, but we know what should be fixed to make it work on a larger scale.</p>
+    </main>
+    <footer>
+        &#xA9; The device and the website were created by Natalia Lodzińska, Veronika Titaeva and Adrian Włodarski.
+    </footer>
+    
+
+
+</body></html>
